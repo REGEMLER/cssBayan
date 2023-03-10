@@ -186,3 +186,56 @@ input:checked + label .bayan-title{
     color: black;
     transition: all linear 0.6s;
 }
+
+@media screen and (max-width: 820px) {
+    .container{
+        max-width: 820px;
+        min-width: 320px;
+    }
+
+    h1{
+        margin: 0.8rem;
+        padding-bottom: 0.8rem;
+        text-align: center;
+    }
+
+    .bayan-title{
+        font-size: 20px;
+    }
+
+    .bayan-img{
+        width: 140px;
+        height: 200px;
+    }
+
+    .icon{
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        max-width: 320px;
+        min-width: 120px;
+    }
+
+    h1{
+        margin: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .bayan-title{
+        font-size: 14px;
+    }
+
+    .bayan-img{
+        width: 100px;
+        height: 150px;
+    }
+
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+}
