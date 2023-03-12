@@ -31,7 +31,6 @@ h1{
 .container{
     width: 100%;
     max-width: 1900px;
-    min-width: 820px;
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -39,7 +38,7 @@ h1{
 .acord{
     width: 90%;
     margin: 1rem auto;
-    background-color: rgb(179, 172, 172);
+    background-color: #c3b7a5;
     border-radius: 5px;
     padding: 5%;
 }
@@ -70,8 +69,8 @@ h1{
 }
 
 .bayan-title{
-    font-size: 24px;
-    color: blue;
+    font-size: 1.5rem;
+    color: rgb(60, 60, 194);
     transition: all linear .4s;
 }
 
@@ -126,7 +125,7 @@ input:checked + label .bayan-body:active{
 }
 
 input:checked + label:active .bayan-title{
-   color: blue;
+    color: rgb(60, 60, 194);
 }
 
 .bayan-head:active{
@@ -190,7 +189,6 @@ input:checked + label .bayan-title{
 @media screen and (max-width: 820px) {
     .container{
         max-width: 820px;
-        min-width: 320px;
     }
 
     h1{
@@ -200,7 +198,7 @@ input:checked + label .bayan-title{
     }
 
     .bayan-title{
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     .bayan-img{
@@ -226,7 +224,7 @@ input:checked + label .bayan-title{
     }
 
     .bayan-title{
-        font-size: 14px;
+        font-size: 0.8rem;
     }
 
     .bayan-img{
