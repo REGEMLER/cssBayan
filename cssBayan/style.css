@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    display: none;
+}
+
+h1{
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.bayan,
+.item,
+.X,
+.plus,
+.bayan-head,
+.bayan-body{
+    transition: all linear .2s;
+}
+
+.container{
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.acord{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: #c3b7a5;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.bayan{
+    width: 100%;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.item{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.item:last-child{
+    border-bottom: 1px solid #ccc;; 
+}
+
+.bayan-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.bayan-title{
+    font-size: 1.5rem;
+    color: rgb(60, 60, 194);
+    transition: all linear .4s;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.icon img{
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: all linear 0.4s;
+}
+
+.X{
+    display: none;
+}
+
+.bayan-body{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer inherit;
+}
+
+.bayan-img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer inherit;
+}
+
+.bayan-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.acord:active{
+    cursor: not-allowed;
+}
+
+input:checked + label .bayan-body:active{
+    cursor: wait;
+}
+
+input:checked + label:active .bayan-title{
+    color: rgb(60, 60, 194);
+}
+
+.bayan-head:active{
+    cursor: wait;
+}
+
+.bayan:hover .icon img{
+    visibility: visible; 
+    transition: all linear .4s;
+    cursor: pointer;
+}
+
+.bayan:hover  .bayan-title{
+    color: black;
+    transition: all linear .4s;
+}
+
+.item:hover .bayan-body{
+    height: auto;
+    padding: 1rem;
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    transition: all linear 0.6s;
+}
+
+.item:hover .plus{
+    display: none;
+    transition: all linear 0.6s;
+}
+
+.item:hover .X{
+    display: inline;
+    transition: all linear 0.6s
+}
+
+input:checked + label .bayan-body{
+    height: auto;
+    padding: 1rem;
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    transition: all linear 0.6s;
+}
+
+input:checked + label .plus{
+    display: none;
+    transition: all linear 0.6s;
+}
+
+input:checked + label .X{
+    display: inline;
+    transition: all linear 0.6s;
+}
+
+input:checked + label .bayan-title{
+    color: black;
+    transition: all linear 0.6s;
+}
+
+@media screen and (max-width: 820px) {
+    .container{
+        max-width: 820px;
+    }
+
+    h1{
+        margin: 0.8rem;
+        padding-bottom: 0.8rem;
+        text-align: center;
+    }
+
+    .bayan-title{
+        font-size: 1.2rem;
+    }
+
+    .bayan-img{
+        width: 140px;
+        height: 200px;
+    }
+
+    .icon{
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        max-width: 320px;
+        min-width: 120px;
+    }
+
+    h1{
+        margin: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .bayan-title{
+        font-size: 0.8rem;
+    }
+
+    .bayan-img{
+        width: 100px;
+        height: 150px;
+    }
+
+    .icon{
+        width: 15px;
+        height: 15px;
+    }
+}
